@@ -19,6 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
 
+        <style type="text/tailwindcss">
+            .section-container {
+                @apply container p-4 mx-auto;
+            }
+        </style>
+
+        
     <!-- Custom Tailwind class -->
     <script>
         tailwind.config = {
@@ -32,16 +39,18 @@
                         'sora': ['Sora', 'sans-serif'],
                     }
                 }
-            }
+            },
+
         }
     </script>
+    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="text-[#111] font-sora">
     <!-- Header -->
     <header>
         <!-- Navbar Desktop -->
@@ -61,23 +70,72 @@
                 <div class="sm:flex space-x-4 hidden items-center">
                     <i class="fa-regular fa-bell text-2xl cursor-pointer"></i>
                     <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer"></i>
-                    <button class="text-xl px-[30px] py-[10px] border border-yellow rounded-xl hover:bg-yellow">Login</button>
-                    <button class="text-xl px-[30px] py-[10px] border bg-yellow rounded-xl hover:border-yellow hover:bg-white">Register</button>
+                    <button
+                        class="text-xl px-[30px] py-[10px] border border-yellow rounded-xl hover:bg-yellow">Login</button>
+                    <button
+                        class="text-xl px-[30px] py-[10px] border bg-yellow rounded-xl hover:border-yellow hover:bg-white">Register</button>
                 </div>
                 <i class="fa-solid fa-bars sm:hidden text-2xl"></i>
             </div>
         </nav>
         <!-- Navbar End -->
+
         <!-- Hero -->
-        <section>
-            
-            
+        <section class="section-container">
+            <div class="py-8 sm:py-20">
+                <h1 class="font-display text-[30px] sm:text-[56px] mb-3 sm:mb-4">Pamper Your Pet, <br> Because They
+                    Deserve <br>
+                    the Bes</h1>
+                <p class="max-w-[672px] mb-3 sm:mb-6 font-sora text-base sm:text-[20px]">Discover a world of treats,
+                    toys, and
+                    essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="bg-yellow px-[30px] py-[10px] rounded-lg font-sora text-base sm:text-[20px]">Find a
+                    pet</button>
+                <img class="w-[100%] mt-[-50px] sm:mt-[-450px]" src="./assets/cat-big.png" alt="Big Cat">
+            </div>
         </section>
         <!-- Hero End -->
     </header>
     <!-- Header End -->
     <!-- Main -->
     <main>
+        <!-- Browse By Categories -->
+        <section class="section-container text-[#000] mb-32">
+            <h3 class="font-display text-2xl sm:text-4xl mb-8 sm:mb-12">Browse By Categories</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-6 gap-[10px] sm:gap-6 ">
+                <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 sm:py-9 py-7">
+                    <img class="mb-6 p-7 bg-white rounded-full" src="./assets/dog-cartoon.png" alt="">
+                    <h1 class="text-xl font-display">Dog</h1>
+                    <p class="text-base">3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 sm:py-9 py-7">
+                    <img class=" mb-6 p-7 bg-white rounded-full" src="./assets/fish-cartoon.png" alt="">
+                    <h1 class="text-xl font-display">Fish</h1>
+                    <p>3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 py-9">
+                    <img class="mb-6 p-7 bg-white rounded-full" src="./assets/cat-cartoon.png" alt="">
+                    <h1 class="text-xl font-display">Cat</h1>
+                    <p>3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 py-9">
+                    <img class="mb-6 p-7 bg-white rounded-full" src="./assets/bird-cartoon.png" alt="">
+                    <h1 class="text-xl font-display">Birds</h1>
+                    <p>3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 py-9">
+                    <img class="mb-6 p-7 bg-white rounded-full" src="./assets/mouse-cartoon.png" alt="">
+                    <h1 class="text-xl font-display">Small pet</h1>
+                    <p>3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 py-9">
+                    <img class="mb-6 p-7 bg-white rounded-full" src="./assets/rabbit-cartoon.png" alt="">
+                    <h1 class="text-xl font-display">Rabit</h1>
+                    <p>2 items</p>
+                </div>
+            </div>
+        </section>
+        <!-- Browse By Categories End -->
 
     </main>
     <!-- Main End -->
