@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,68 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Tailwind class -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFDC26',
+                    },
+                    fontFamily: {
+                        'display': ['ADLaM Display', 'sans-serif'],
+                        'body': ['Sora', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Header -->
     <header>
-
+        <!-- Navbar Desktop -->
+        <nav class="w-full bg-[#FFF9F4] text-[#111] font-body">
+            <div class="flex justify-between items-center p-2 sm:p-4 container mx-auto">
+                <div class="flex gap-3 items-center cursor-pointer">
+                    <img class="h-12" src="./assets/logo-header.png" alt="Logo">
+                    <h2 class="hidden sm:block font-body text-[26px]">Browse<span class="text-yellow">4</span>Pets</h2>
+                </div>
+                <div class="hidden sm:block font-body text-xl text-[#111]">
+                    <ul class="flex space-x-4">
+                        <li><a href="">Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="sm:flex space-x-4 hidden items-center">
+                    <i class="fa-regular fa-bell text-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    <button class="text-xl ">Sign in</button>
+                    <button class="text-xl">Sign up</button>
+                </div>
+                <i class="fa-solid fa-bars sm:hidden text-2xl"></i>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+        <!-- Hero -->
+        <section>
+            
+            
+        </section>
+        <!-- Hero End -->
     </header>
     <!-- Header End -->
     <!-- Main -->
