@@ -2,11 +2,11 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/logo-header.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo-header.png" type="image/x-icon" />
 
     <!-- daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -14,34 +14,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <style type="text/tailwindcss">
         /* Common */
-        .section-container {
-                @apply container p-4 mx-auto;
-            }
-        .section-title {
-                @apply font-display text-2xl sm:text-4xl mb-8 sm:mb-12;
-            }
-            /* Browse By Categories */
-        .bbc-card { 
-                @apply bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 sm:py-9 py-7;
-            }
-        .bbc-card-img { 
-                @apply mb-6 p-7 bg-white rounded-full;
-            }
-            /* Browse By Categories End */
+      .section-container {
+        @apply container p-4 mx-auto;
+      }
+      .section-title {
+        @apply font-display text-2xl sm:text-4xl mb-8 sm:mb-12;
+      }
+      /* Browse By Categories */
+      .bbc-card {
+        @apply bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 sm:py-9 py-7;
+      }
+      .bbc-card-img {
+        @apply mb-6 p-7 bg-white rounded-full;
+      }
+      /* Browse By Categories End */
 
-            /* Trending Pet Products */
-            
-            /* Trending Pet Products End */
+      /* Trending Pet Products */
+      .tpp-card {
+        @apply flex items-center justify-center gap-[10px] sm:gap-4 bg-white border border-border rounded-[10px];
+      }
 
+      /* Trending Pet Products End */
     </style>
-
 
     <!-- Custom Tailwind class -->
     <script>
@@ -49,15 +50,16 @@
             theme: {
                 extend: {
                     colors: {
-                        yellow: '#FFDC26',
+                        yellow: "#FFDC26",
+                        border: "rgba(17, 17, 17, 0.10)",
                     },
                     fontFamily: {
-                        'display': ['ADLaM Display', 'sans-serif'],
-                        'sora': ['Sora', 'sans-serif'],
-                    }
-                }
+                        display: ["ADLaM Display", "sans-serif"],
+                        sora: ["Sora", "sans-serif"],
+                    },
+                },
             },
-        }
+        };
     </script>
 
     <!-- Icons -->
@@ -73,8 +75,10 @@
         <nav class="w-full bg-[#FFF9F4] text-[#111] font-sora border-b-[0.5px] border-black sm:border-none">
             <div class="flex justify-between items-center p-4 container mx-auto">
                 <div class="flex gap-3 items-center cursor-pointer">
-                    <img class="h-12" src="./assets/logo-header.png" alt="Logo">
-                    <h2 class="hidden sm:block font-sora text-[26px]">Browse<span class="text-yellow">4</span>Pets</h2>
+                    <img class="h-12" src="./assets/logo-header.png" alt="Logo" />
+                    <h2 class="hidden sm:block font-sora text-[26px]">
+                        Browse<span class="text-yellow">4</span>Pets
+                    </h2>
                 </div>
                 <div class="hidden sm:block font-sora text-xl text-[#111]">
                     <ul class="flex space-x-8">
@@ -86,10 +90,13 @@
                 <div class="sm:flex space-x-4 hidden items-center">
                     <i class="fa-regular fa-bell text-2xl cursor-pointer"></i>
                     <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer"></i>
+                    <button class="text-xl px-[30px] py-[10px] border border-yellow rounded-xl hover:bg-yellow">
+                        Login
+                    </button>
                     <button
-                        class="text-xl px-[30px] py-[10px] border border-yellow rounded-xl hover:bg-yellow">Login</button>
-                    <button
-                        class="text-xl px-[30px] py-[10px] border bg-yellow rounded-xl hover:border-yellow hover:bg-white">Register</button>
+                        class="text-xl px-[30px] py-[10px] border bg-yellow rounded-xl hover:border-yellow hover:bg-white">
+                        Register
+                    </button>
                 </div>
                 <i class="fa-solid fa-bars sm:hidden text-2xl"></i>
             </div>
@@ -99,21 +106,21 @@
         <!-- Hero -->
         <section class="section-container">
             <div class="py-8 sm:py-20">
-                <h1 class="font-display text-[30px] sm:text-[56px] mb-3 sm:mb-4">Pamper Your Pet,
-                    <br> Because They
-                    Deserve <br>
+                <h1 class="font-display text-[30px] sm:text-[56px] mb-3 sm:mb-4">
+                    Pamper Your Pet, <br />
+                    Because They Deserve <br />
                     the Bes
                 </h1>
-                <p class="animate-pulse max-w-[672px] mb-3 sm:mb-6 font-sora text-base sm:text-[20px]">Discover a world
-                    of treats,
-                    toys, and
-                    essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <p class="animate-pulse max-w-[672px] mb-3 sm:mb-6 font-sora text-base sm:text-[20px]">
+                    Discover a world of treats, toys, and essentials handpicked for your
+                    furry friends. Shop now and make tails wag with joy!
+                </p>
                 <button
-                    class="absolute z-10 bg-yellow px-[30px] py-[10px] rounded-lg font-sora text-base sm:text-[20px] cursor-pointer border border-yellow hover:bg-white hover:border hover:border-yellow">Find
-                    a
-                    pet</button>
+                    class="absolute z-10 bg-yellow px-[30px] py-[10px] rounded-lg font-sora text-base sm:text-[20px] cursor-pointer border border-yellow hover:bg-white hover:border hover:border-yellow">
+                    Find a pet
+                </button>
                 <img class="relative gap-x-0 animate-pulse w-[100%] mt-[-50px] sm:mt-[-450px]"
-                    src="./assets/cat-big.png" alt="Big Cat">
+                    src="./assets/cat-big.png" alt="Big Cat" />
             </div>
         </section>
         <!-- Hero End -->
@@ -124,34 +131,34 @@
         <!-- Browse By Categories -->
         <section class="section-container text-[#000] mb-32">
             <h3 class="section-title">Browse By Categories</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-6 gap-[10px] sm:gap-6 ">
+            <div class="grid grid-cols-2 sm:grid-cols-6 gap-[10px] sm:gap-6">
                 <div class="bbc-card">
-                    <img class="bbc-card-img" src="./assets/dog-cartoon.png" alt="">
+                    <img class="bbc-card-img" src="./assets/dog-cartoon.png" alt="" />
                     <h1 class="text-xl font-display">Dog</h1>
                     <p class="text-base">3 items</p>
                 </div>
                 <div class="bbc-card">
-                    <img class=" bbc-card-img" src="./assets/fish-cartoon.png" alt="">
+                    <img class="bbc-card-img" src="./assets/fish-cartoon.png" alt="" />
                     <h1 class="text-xl font-display">Fish</h1>
                     <p>3 items</p>
                 </div>
                 <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center px-4 py-9">
-                    <img class="bbc-card-img" src="./assets/cat-cartoon.png" alt="">
+                    <img class="bbc-card-img" src="./assets/cat-cartoon.png" alt="" />
                     <h1 class="text-xl font-display">Cat</h1>
                     <p>3 items</p>
                 </div>
                 <div class="bbc-card">
-                    <img class="bbc-card-img" src="./assets/bird-cartoon.png" alt="">
+                    <img class="bbc-card-img" src="./assets/bird-cartoon.png" alt="" />
                     <h1 class="text-xl font-display">Birds</h1>
                     <p>3 items</p>
                 </div>
                 <div class="bbc-card">
-                    <img class="bbc-card-img" src="./assets/mouse-cartoon.png" alt="">
+                    <img class="bbc-card-img" src="./assets/mouse-cartoon.png" alt="" />
                     <h1 class="text-xl font-display">Small pet</h1>
                     <p>3 items</p>
                 </div>
                 <div class="bbc-card">
-                    <img class="bbc-card-img" src="./assets/rabbit-cartoon.png" alt="">
+                    <img class="bbc-card-img" src="./assets/rabbit-cartoon.png" alt="" />
                     <h1 class="text-xl font-display">Rabit</h1>
                     <p>2 items</p>
                 </div>
@@ -160,30 +167,35 @@
         <!-- Browse By Categories End -->
 
         <!-- Trending Pet Products -->
-        <section class=" py-[140px] bg-[#FFF9F4]">
+        <section class="py-[140px] bg-[#FFF9F4]">
             <div class="section-container">
                 <h3 class="section-title">Trending Pet Products</h3>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
                     <div class="sm:w-2/5">
                         <h3>T- Shirt For Dogs</h3>
-                        <p>Discover a world of treats, toys, and essentials handpicked for </p>
+                        <p>
+                            Discover a world of treats, toys, and essentials handpicked for
+                        </p>
                         <button>Shop Now</button>
-                        <img src="./assets/cute-pet-small.png" alt="">
+                        <img src="./assets/cute-pet-small.png" alt="" />
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-8 flex-1">
-                        <div class="flex items-center justify-center gap-[10px] sm:gap-4 bg-white border border-[rgba(17, 17, 17, 0.10)] rounded-[10px]">
+                        <div class="tpp-card">
                             <div class="p-3 sm:p-[19px] bg-[#FFF9F4] rounded-[10px] my-2">
-                                <img class="sm:w-12 w-8" src="./assets/dog-cartoon.png" alt="">
+                                <img class="sm:w-12 w-8" src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
-                                <p class="sm:text-base text-[10px]"><i class="fa-solid fa-star text-yellow mr-1 sm:mr-3"></i> 4.5</p>
+                                <p class="sm:text-base text-[10px]">
+                                    <i class="fa-solid fa-star text-yellow mr-1 sm:mr-3"></i>
+                                    4.5
+                                </p>
                                 <h4 class="text-xs sm:text-[20px] font-medium">Pet Bed</h4>
                                 <p class="text-[10px] sm:text-base font-medium">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -191,9 +203,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -201,9 +213,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -211,9 +223,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -221,9 +233,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -231,9 +243,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -241,9 +253,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -251,9 +263,9 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 sm:gap-8 bg-yellow">
+                        <div class="tpp-card">
                             <div>
-                                <img src="./assets/dog-cartoon.png" alt="">
+                                <img src="./assets/dog-cartoon.png" alt="" />
                             </div>
                             <div>
                                 <p><i class="fa-solid fa-star text-yellow"></i> 4.5</p>
@@ -261,22 +273,15 @@
                                 <p>$39.99</p>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-
-
         </section>
         <!-- Trending Pet Products End -->
-
-
     </main>
     <!-- Main End -->
     <!-- Footer -->
-    <footer>
-
-    </footer>
+    <footer></footer>
     <!-- Footer End -->
 </body>
 
