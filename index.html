@@ -166,7 +166,7 @@
         </section>
         <!-- Browse By Categories End -->
         <!-- Bonus Section Start -->
-        <section class=" section-container w-screen my-8">
+        <section class="hidden section-container w-screen my-8">
             <div class="carousel w-full ">
                 <div id="item1" class="carousel-item w-full">
                     <img alt="Slide" src="./Slider/1.png" class="w-full" />
@@ -187,7 +187,8 @@
             <div class="section-container">
                 <h3 class="section-title">Trending Pet Products</h3>
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-5">
-                    <div class="sm:w-2/5 bg-[#F9DF8A] relative rounded-[10px] pl-4 sm:pl-8 pt-6 sm:pt-14 h-[339px] sm:h-auto">
+                    <div
+                        class="sm:w-2/5 bg-[#F9DF8A] relative rounded-[10px] pl-4 sm:pl-8 pt-6 sm:pt-14 h-[339px] sm:h-auto">
                         <h3 class="text-[26px] sm:text-[32px] font-display mb-4 sm:mb-5">T-Shirt For Dogs</h3>
                         <p class="text-sm sm:text-base max-w-[334px] mb-4 sm:mb-5">
                             Discover a world of treats, toys, and essentials handpicked for
@@ -334,20 +335,27 @@
         <!-- Trending Pet Products End -->
 
         <!-- Everyday low Price -->
-        <section class="section-container ">
+        <section class="section-container">
             <h3 class="section-title">Everyday low Price</h3>
-            <div class="flex sm:flex-row flex-col justify-evenly gap-6 h-[480px]">
-                <div class="w-3/5 border bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] relative">
-                    <p>Under Price</p>
-                    <h3>Pet Grooming Mitt</h3>
-                    <p>(Easy Hair Removal)</p>
-                    <h2>$7.99</h2>
-                    <img class="absolute bottom-0 right-0" src="./assets/cute-dog-mid.png" alt="">
+            <div class="flex sm:flex-row flex-col justify-evenly gap-7">
+                <div
+                    class=" w-full sm:w-3/5 h-[334px] sm:h-[480px] border bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] relative rounded-xl">
+                    <div class="sm:h-[480px] pt-[38px] pl-[34px] sm:pt-0 sm:flex flex-col justify-center sm:pl-20">
+                        <p class="hidden sm:block text-[20px] pb-3">Under Price</p>
+                        <h3 class="font-display text-[22px] sm:text-[32px]">Pet Grooming Mitt</h3>
+                        <p class="hidden sm:block font-display text-[24px] text-white pb-4">(Easy Hair Removal)</p>
+                        <h2 class="sm:text-black text-white font-display text-[39px] sm:text-[56px]">$7.99</h2>
+                    </div>
+
+                    <img class="absolute bottom-0 right-0 h-[268px] sm:h-[480px]" src="./assets/cute-dog-mid.png"
+                        alt="">
                 </div>
-                <div class="border flex-1 relative bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]">
-                    <h4>T-Shirt for Dogs</h4>
-                    <h2>$7.99</h2>
-                    <img class="absolute bottom-0 right-0" src="./assets/cute-pet-mid.png" alt="">
+                <div
+                    class="pt-[38px] pl-[34px] sm:pt-[50px] sm:pl-[55px] rounded-xl h-[334px] sm:h-[480px] border sm:flex-1 relative bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]">
+                    <h3 class="font-display text-[22px] sm:text-[32px]">T-Shirt for Dogs</h3>
+                    <h2 class="font-display text-[39px] sm:text-[56px] text-yellow">$7.99</h2>
+                    <img class="absolute bottom-0 right-0 h-[273px] sm:h-[392px]" src="./assets/cute-pet-mid.png"
+                        alt="">
                 </div>
             </div>
         </section>
